@@ -16,4 +16,6 @@ Preview locally with clean URLs: `npx serve .`
 
 ## Analytics
 
-Umami Cloud (EU, account hello@smartroads.ai), cookieless. Every page loads Umami's script (`data-domains="smartroads.ai"`, so local previews aren't counted) and `track.js`, which sends click events: `Email click`, `PDF download`, `Outbound link`, `Language`. Keep both script tags when replacing a page with a new design export.
+PostHog Cloud EU (account hello@smartroads.ai, project "SmartRoads"), cookieless (`cookieless_mode: 'always'` in the SDK plus "Enable cookieless tracking" in project settings; no country data in this mode). Every page loads `analytics.js`, which initialises PostHog only on smartroads.ai (local previews aren't counted) and sends click events: `Email click`, `PDF download`, `Outbound link`, `Language`. Keep `<script src="/analytics.js"></script>` when replacing a page with a new design export.
+
+A weekly email of the "SmartRoads weekly" dashboard goes to hello@smartroads.ai on Fridays at 07:00 Europe/Lisbon (PostHog subscription).
