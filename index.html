@@ -23,7 +23,6 @@ body{margin:0;background:#071C42}
 a{color:inherit;text-decoration:none}
 .sr-wrap{max-width:1280px;margin:0 auto;padding-left:40px;padding-right:40px;box-sizing:border-box}
 .sr-seal3{display:grid; grid-template-columns:repeat(3,1fr); gap:40px 48px}
-@media (max-width: 820px){.sr-seal3{grid-template-columns:1fr !important}.sr-seal3>div{align-items:flex-start !important; text-align:left !important}.sr-seal3 .sr-slogo{justify-content:flex-start !important}}
 .sr-eu{cursor:help}
 .sr-tip{display:none; position:absolute; left:0; bottom:calc(100% + 14px); width:min(380px, 86vw); box-sizing:border-box; background:#0A2250; border:1px solid #26427A; color:#DCE3F0; font-size:13px; line-height:1.5; padding:14px 16px; z-index:5; box-shadow:0 8px 24px rgba(0,0,0,0.4)}
 .sr-eu:hover .sr-tip,.sr-eu:focus .sr-tip,.sr-eu:focus-within .sr-tip{display:block}
@@ -50,19 +49,49 @@ a{color:inherit;text-decoration:none}
 @media (max-width: 900px){.sr-livepanel{display:none}}
 @media (max-width: 820px){
 .sr-wrap{padding-left:20px !important;padding-right:20px !important}
-.sr-sec{padding-top:72px !important;padding-bottom:72px !important}
+.sr-sec{padding-top:56px !important;padding-bottom:56px !important}
 .sr-navlinks,.sr-navcta{display:none !important}
-.sr-hero{min-height:0 !important;padding-bottom:300px !important}
-.sr-herotext{padding-top:40px !important}
-.sr-herosvg{top:auto !important;bottom:0 !important;height:860px !important;width:1440px !important;left:50% !important;margin-left:-917px !important}
-.sr-herofade{background:linear-gradient(180deg, rgba(7,28,66,0.9) 0%, rgba(7,28,66,0.72) 55%, rgba(7,28,66,0.1) 100%), linear-gradient(0deg, #071C42 0%, rgba(7,28,66,0) 16%) !important}
-.sr-h1{font-size:54px !important}
-.sr-lead{font-size:18px !important}
-.sr-h2{font-size:40px !important}
-.sr-ctah2{font-size:44px !important}
-.sr-bignum{font-size:96px !important}
+.sr-hero{min-height:690px !important}
+.sr-herotext{padding-top:24px !important}
+.sr-herosvg{position:absolute !important;top:auto !important;bottom:0 !important;left:50% !important;margin-left:-597px !important;width:1000px !important;height:597px !important}
+.sr-herofade{background:linear-gradient(180deg, rgba(7,28,66,0.92) 0%, rgba(7,28,66,0.8) 42%, rgba(7,28,66,0) 62%), linear-gradient(0deg, #071C42 0%, rgba(7,28,66,0) 12%) !important}
+.sr-h1{font-size:50px !important}
+.sr-lead{font-size:17px !important;margin-top:20px !important}
+.sr-ctas{margin-top:28px !important}
+.sr-ctas a{flex:1 1 100% !important;justify-content:center !important}
+.sr-h2{font-size:36px !important;margin-top:16px !important}
+.sr-ctah2{font-size:40px !important}
+.sr-grid{gap:36px !important;margin-top:28px !important}
+.sr-dashline{margin-top:28px !important}
+.sr-stepnum{font-size:56px !important;text-align:center}
+.sr-step{text-align:center}
+.sr-step h3{font-size:32px !important;margin-top:20px !important}
+.sr-step p,.sr-why p,.sr-card p{font-size:16px !important;margin-top:10px !important}
+.sr-frame{max-width:300px;margin-left:auto !important;margin-right:auto !important;margin-top:14px !important}
+.sr-bignum{font-size:72px !important}
+.sr-why{text-align:center;padding-top:24px !important}
+.sr-why h3{font-size:30px !important}
+.sr-why svg{width:52px !important;height:52px !important;margin:0 auto}
+.sr-card{text-align:center}
+.sr-photo{width:180px !important;margin-left:auto;margin-right:auto}
+.sr-card .sr-name{font-size:30px !important}
 .sr-logo{font-size:26px !important}
 .sr-footnav{gap:10px 20px !important}
+.sr-seal3{grid-template-columns:1fr !important;gap:0 !important;padding:8px 0 !important}
+.sr-seal3>div{display:grid !important;grid-template-columns:150px 1fr;column-gap:20px;align-items:center !important;text-align:left !important;padding:20px 0;border-top:1px solid #1C3566}
+.sr-seal3>div:first-child{border-top:0}
+.sr-seal3>div>div:first-child{grid-column:2;grid-row:1;min-height:0 !important}
+.sr-seal3 .sr-slogo{grid-column:1;grid-row:1;justify-content:center !important;height:auto !important;width:auto !important}
+.sr-seal3 img{width:auto !important;height:auto !important;max-width:150px !important;max-height:52px !important}
+.sr-sealrow{padding:24px 0 !important}
+.sr-row2{flex-direction:column !important;align-items:center !important;gap:24px !important}
+.sr-row2 img{width:auto !important;height:46px !important;max-width:100% !important}
+.sr-row2 .sr-eu img{height:34px !important}
+.sr-row3{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:16px !important;justify-items:center}
+.sr-row3 img{width:auto !important;height:auto !important;max-width:100% !important;max-height:32px !important}
+.sr-foot{justify-content:center !important;text-align:center}
+.sr-eu{justify-content:center !important;gap:16px 20px !important}
+.sr-tip{left:50% !important;transform:translateX(-50%)}
 }
 </style>
 </helmet>
@@ -71,6 +100,7 @@ a{color:inherit;text-decoration:none}
 
 <!-- ============ HERO (background layer = road footage; replace the animated SVG with a real video when available) ============ -->
 <section class="sr-hero" style="position:relative; min-height:920px; overflow:hidden; background:#071C42">
+<div class="sr-heroscene" style="position:absolute; top:0; left:0; right:0; bottom:0">
 <svg class="sr-herosvg" viewBox="0 0 1440 860" preserveAspectRatio="xMidYMid slice" style="position:absolute; top:0; left:0; width:100%; height:100%" aria-hidden="true">
 <defs>
 <linearGradient id="v3-sky" x1="0" y1="0" x2="0" y2="1">
@@ -164,6 +194,7 @@ a{color:inherit;text-decoration:none}
 <circle class="sr-rec" cx="1204" cy="136" r="5" fill="#FF5A4D"></circle>
 <text x="1218" y="140" font-family="IBM Plex Mono, monospace" font-size="12" fill="#F4F2EA">{{t.hero.rec}}</text>
 </svg>
+</div>
 
 <div class="sr-herofade" style="position:absolute; top:0; left:0; right:0; bottom:0; background:linear-gradient(90deg, rgba(7,28,66,0.92) 0%, rgba(7,28,66,0.62) 42%, rgba(7,28,66,0) 72%), linear-gradient(0deg, #071C42 0%, rgba(7,28,66,0) 22%); pointer-events:none"></div>
 
@@ -206,7 +237,7 @@ a{color:inherit;text-decoration:none}
 <div class="sr-wrap sr-herotext" style="position:relative; z-index:2; padding-top:88px">
 <h1 class="sr-h1" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; letter-spacing:-0.01em; line-height:0.9; margin:0; font-size:clamp(60px, 9vw, 132px); max-width:760px">{{t.hero.h1a}}<br><span style="color:var(--y)">{{t.hero.h1b}}</span></h1>
 <p class="sr-lead" style="max-width:560px; margin:32px 0 0 0; font-size:21px; line-height:1.5; color:#DCE3F0">{{t.hero.sub}}</p>
-<div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:40px">
+<div class="sr-ctas" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:40px">
 <a href="#demo" style="background:var(--y); color:#071C42; padding:0 32px; min-height:56px; display:inline-flex; align-items:center; font-size:17px; font-weight:600; border-radius:2px">{{t.hero.ctaDemo}}</a>
 <a href="#how" style="border:1.5px solid #F4F2EA; color:#F4F2EA; padding:0 32px; min-height:56px; display:inline-flex; align-items:center; font-size:17px; font-weight:600; border-radius:2px">{{t.hero.ctaHow}}</a>
 </div>
@@ -239,14 +270,14 @@ a{color:inherit;text-decoration:none}
 <span>{{t.how.eyebrow}}</span>
 </div>
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:24px 0 0 0; font-size:clamp(46px, 6.4vw, 96px); max-width:1000px">{{t.how.h2}}</h2>
-<div style="margin-top:56px; border-top:4px dashed var(--y)"></div>
+<div class="sr-dashline" style="margin-top:56px; border-top:4px dashed var(--y)"></div>
 
-<div style="display:flex; flex-wrap:wrap; gap:56px 40px; margin-top:48px">
+<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:56px 40px; margin-top:48px">
 
 <!-- Step 1 -->
-<div style="flex:1 1 300px; min-width:0">
-<div class="sr-bignum" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:120px; line-height:0.85; color:var(--y)">01</div>
-<div style="margin-top:24px; border:1px solid #1C3566; border-radius:8px; overflow:hidden">
+<div class="sr-step" style="flex:1 1 300px; min-width:0">
+<div class="sr-stepnum" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:120px; line-height:0.85; color:var(--y)">01</div>
+<div class="sr-frame" style="margin-top:24px; border:1px solid #1C3566; border-radius:8px; overflow:hidden">
 <svg viewBox="0 0 440 300" style="width:100%; height:auto; display:block" aria-hidden="true">
 <rect width="440" height="300" fill="#05173A"></rect>
 <polygon points="50,24 390,24 420,200 20,200" fill="#0B2149" stroke="#26427A" stroke-width="2"></polygon>
@@ -270,9 +301,9 @@ a{color:inherit;text-decoration:none}
 </div>
 
 <!-- Step 2 -->
-<div style="flex:1 1 300px; min-width:0">
-<div class="sr-bignum" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:120px; line-height:0.85; color:var(--y)">02</div>
-<div style="margin-top:24px; border:1px solid #1C3566; border-radius:8px; overflow:hidden">
+<div class="sr-step" style="flex:1 1 300px; min-width:0">
+<div class="sr-stepnum" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:120px; line-height:0.85; color:var(--y)">02</div>
+<div class="sr-frame" style="margin-top:24px; border:1px solid #1C3566; border-radius:8px; overflow:hidden">
 <svg viewBox="0 0 440 300" style="width:100%; height:auto; display:block" aria-hidden="true">
 <rect width="440" height="300" fill="#05173A"></rect>
 <rect x="12" y="12" width="416" height="160" fill="#0A2250" stroke="#1C3566"></rect>
@@ -299,9 +330,9 @@ a{color:inherit;text-decoration:none}
 </div>
 
 <!-- Step 3 -->
-<div style="flex:1 1 300px; min-width:0">
-<div class="sr-bignum" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:120px; line-height:0.85; color:var(--y)">03</div>
-<div style="margin-top:24px; border:1px solid #1C3566; border-radius:8px; overflow:hidden">
+<div class="sr-step" style="flex:1 1 300px; min-width:0">
+<div class="sr-stepnum" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:120px; line-height:0.85; color:var(--y)">03</div>
+<div class="sr-frame" style="margin-top:24px; border:1px solid #1C3566; border-radius:8px; overflow:hidden">
 <svg viewBox="0 0 440 300" style="width:100%; height:auto; display:block" aria-hidden="true">
 <rect width="440" height="300" fill="#05173A"></rect>
 <rect x="0" y="0" width="440" height="28" fill="#0A2250"></rect>
@@ -345,7 +376,7 @@ a{color:inherit;text-decoration:none}
 <section class="sr-sec" style="background:var(--y); color:#071C42; padding:110px 0">
 <div class="sr-wrap">
 <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500">{{t.diff.eyebrow}}</div>
-<div style="display:flex; flex-wrap:wrap; gap:48px 40px; margin-top:32px">
+<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:48px 40px; margin-top:32px">
 <div style="flex:1 1 280px; min-width:0; border-left:4px solid #071C42; padding-left:24px">
 <div class="sr-bignum" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; font-size:clamp(84px, 10vw, 152px); line-height:0.85">{{t.diff.no}}</div>
 <div style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; font-size:clamp(40px, 4.4vw, 64px); line-height:0.95; margin-top:8px">{{t.diff.a}}</div>
@@ -372,8 +403,8 @@ a{color:inherit;text-decoration:none}
 </div>
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:24px 0 0 0; font-size:clamp(46px, 6.4vw, 96px); max-width:1000px">{{t.why.h2}}</h2>
 
-<div style="margin-top:64px; display:flex; flex-wrap:wrap; gap:56px 40px">
-<div style="flex:1 1 300px; min-width:0; border-top:4px solid var(--y); padding-top:32px">
+<div class="sr-grid" style="margin-top:64px; display:flex; flex-wrap:wrap; gap:56px 40px">
+<div class="sr-why" style="flex:1 1 300px; min-width:0; border-top:4px solid var(--y); padding-top:32px">
 <svg viewBox="0 0 64 64" width="72" height="72" style="display:block" aria-hidden="true">
 <circle cx="32" cy="32" r="26" fill="none" style="stroke:var(--y)" stroke-width="3.5"></circle>
 <path d="M42 22 C 38 18 28 18 25 26 C 22 34 26 46 42 42 M20 30 H36 M20 37 H34" fill="none" style="stroke:var(--y)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -383,7 +414,7 @@ a{color:inherit;text-decoration:none}
 </div>
 <p style="margin:20px 0 0 0; font-size:19px; line-height:1.55; color:#CBD5E8">{{t.why.at}}</p>
 </div>
-<div style="flex:1 1 300px; min-width:0; border-top:4px solid var(--y); padding-top:32px">
+<div class="sr-why" style="flex:1 1 300px; min-width:0; border-top:4px solid var(--y); padding-top:32px">
 <svg viewBox="0 0 64 64" width="72" height="72" style="display:block" aria-hidden="true">
 <path d="M12 46 C 10 24 24 10 52 10 C 54 36 40 52 18 52" fill="none" style="stroke:var(--y)" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"></path>
 <path d="M12 52 C 22 40 30 32 40 24" fill="none" style="stroke:var(--y)" stroke-width="3.5" stroke-linecap="round"></path>
@@ -393,7 +424,7 @@ a{color:inherit;text-decoration:none}
 </div>
 <p style="margin:20px 0 0 0; font-size:19px; line-height:1.55; color:#CBD5E8">{{t.why.bt}}</p>
 </div>
-<div style="flex:1 1 300px; min-width:0; border-top:4px solid var(--y); padding-top:32px">
+<div class="sr-why" style="flex:1 1 300px; min-width:0; border-top:4px solid var(--y); padding-top:32px">
 <svg viewBox="0 0 64 64" width="72" height="72" style="display:block" aria-hidden="true">
 <path d="M32 6 L54 14 V32 C54 46 44 56 32 60 C20 56 10 46 10 32 V14 Z" fill="none" style="stroke:var(--y)" stroke-width="3.5" stroke-linejoin="round"></path>
 <path d="M22 33 L29 40 L43 24" fill="none" style="stroke:var(--y)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -414,35 +445,35 @@ a{color:inherit;text-decoration:none}
 <span style="width:10px; height:10px; background:var(--y); display:inline-block; flex:0 0 10px"></span>
 <span>{{t.team.eyebrow}}</span>
 </div>
-<div style="display:flex; flex-wrap:wrap; gap:32px 64px; align-items:flex-end; margin-top:24px">
+<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:32px 64px; align-items:flex-end; margin-top:24px">
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:0; font-size:clamp(38px, 4.6vw, 68px); flex:1 1 620px; text-wrap:balance">{{t.team.h2}}</h2>
 <p style="flex:1 1 320px; margin:0; max-width:420px; font-size:19px; line-height:1.55; color:#CBD5E8">{{t.team.p}}</p>
 </div>
-<div style="display:flex; flex-wrap:wrap; gap:48px 32px; margin-top:64px">
+<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:48px 32px; margin-top:64px">
 
-<div style="flex:1 1 260px; min-width:0">
-<div style="width:min(240px, 100%); aspect-ratio:1 / 1; background:#0D2656; overflow:hidden">
+<div class="sr-card" style="flex:1 1 260px; min-width:0">
+<div class="sr-photo" style="width:min(240px, 100%); aspect-ratio:1 / 1; background:#0D2656; overflow:hidden">
 <img src="./assets/ab3c6d86b74e5122cea508f19607b443.jpg" alt="Thaís Araujo" style="width:100%; height:100%; object-fit:cover; display:block">
 </div>
-<div style="margin-top:20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; font-size:34px; line-height:1">Thaís Araujo</div>
+<div class="sr-name" style="margin-top:20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; font-size:34px; line-height:1">Thaís Araujo</div>
 <div style="margin-top:8px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--y)">{{t.team.thaisRole}}</div>
 <p style="margin:14px 0 0 0; font-size:16px; line-height:1.5; color:#CBD5E8">{{t.team.thaisBio}}</p>
 </div>
 
-<div style="flex:1 1 260px; min-width:0">
-<div style="width:min(240px, 100%); aspect-ratio:1 / 1; background:#0D2656; overflow:hidden">
+<div class="sr-card" style="flex:1 1 260px; min-width:0">
+<div class="sr-photo" style="width:min(240px, 100%); aspect-ratio:1 / 1; background:#0D2656; overflow:hidden">
 <img src="./assets/12cb88f25b63c69ac3012fc6b0f48319.jpg" alt="Pedro Marcelino" style="width:100%; height:100%; object-fit:cover; display:block">
 </div>
-<div style="margin-top:20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; font-size:34px; line-height:1">Pedro Marcelino</div>
+<div class="sr-name" style="margin-top:20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; font-size:34px; line-height:1">Pedro Marcelino</div>
 <div style="margin-top:8px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--y)">{{t.team.pedroRole}}</div>
 <p style="margin:14px 0 0 0; font-size:16px; line-height:1.5; color:#CBD5E8">{{t.team.pedroBio}}</p>
 </div>
 
-<div style="flex:1 1 260px; min-width:0">
-<div style="width:min(240px, 100%); aspect-ratio:1 / 1; background:#0D2656; overflow:hidden">
+<div class="sr-card" style="flex:1 1 260px; min-width:0">
+<div class="sr-photo" style="width:min(240px, 100%); aspect-ratio:1 / 1; background:#0D2656; overflow:hidden">
 <img src="./assets/a373fabafabc9e45d3e57782f21d232e.jpg" alt="Prof. Adelino Ferreira" style="width:100%; height:100%; object-fit:cover; display:block">
 </div>
-<div style="margin-top:20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; font-size:34px; line-height:1">Prof. Adelino Ferreira</div>
+<div class="sr-name" style="margin-top:20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; font-size:34px; line-height:1">Prof. Adelino Ferreira</div>
 <div style="margin-top:8px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--y)">{{t.team.advRole}}</div>
 <p style="margin:14px 0 0 0; font-size:16px; line-height:1.5; color:#CBD5E8">{{t.team.advBio}}</p>
 </div>
@@ -457,7 +488,7 @@ a{color:inherit;text-decoration:none}
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:0; font-size:clamp(52px, 7vw, 108px)">{{t.press.h2}}</h2>
 <a href="press" style="font-size:17px; font-weight:600; border-bottom:2px solid #071C42; padding-bottom:3px">{{t.press.all}}</a>
 </div>
-<div style="display:flex; flex-wrap:wrap; gap:64px; margin-top:56px; border-top:2px solid #071C42; padding-top:40px">
+<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:64px; margin-top:56px; border-top:2px solid #071C42; padding-top:40px">
 <article style="flex:2 1 520px; min-width:0">
 <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:0.08em; color:#4A5878">{{t.press.date}}</div>
 <h3 style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.95; letter-spacing:-0.01em; margin:20px 0 0 0; font-size:clamp(32px, 4.4vw, 64px)">{{t.press.title}}</h3>
@@ -566,7 +597,7 @@ a{color:inherit;text-decoration:none}
 </div>
 </div>
 
-<div style="border-top:1px solid #26427A; display:flex; flex-wrap:wrap; align-items:center; gap:40px 72px; padding:48px 0">
+<div style="border-top:1px solid #26427A; display:flex; flex-wrap:wrap; align-items:center; gap:40px 72px; padding:48px 0" class="sr-sealrow sr-row2">
 <img src="./assets/2f71245789619dcdb3a0b00f508e46a9.png" alt="F6S number 15 top company in AI, October 2026" style="width:420px; max-width:100%; height:auto; display:block">
 <div class="sr-eu" tabindex="0" role="group" aria-label="AI-BOOST, funded by the European Union" aria-describedby="sr-eu-tip" style="position:relative; display:flex; flex-wrap:wrap; align-items:center; gap:24px 36px; outline-offset:10px">
 <img src="./assets/926fdff33ad14158f4abd03ae053f5a5.png" alt="AI-BOOST, delivering the next level of European AI open competitions" style="width:210px; max-width:100%; height:auto; display:block">
@@ -576,7 +607,7 @@ a{color:inherit;text-decoration:none}
 </div>
 </div>
 
-<div style="border-top:1px solid #26427A; border-bottom:1px solid #26427A; display:flex; flex-wrap:wrap; align-items:center; gap:40px 96px; padding:48px 0">
+<div style="border-top:1px solid #26427A; border-bottom:1px solid #26427A; display:flex; flex-wrap:wrap; align-items:center; gap:40px 96px; padding:48px 0" class="sr-sealrow sr-row3">
 <img src="./assets/d8955def94f3bbd6f98ca465c22c92bd.png" alt="FCT, Fundação para a Ciência e a Tecnologia" style="width:min(202px, 100%); height:auto; display:block">
 <img src="./assets/48210924735c9f78ed9eca1050e1f959.png" alt="AI on Demand" style="width:min(150px, 100%); height:auto; display:block">
 <img src="./assets/2c18f04e89cadc0b6984ce9d630469c5.png" alt="Município de Olhão" style="width:min(200px, 100%); height:auto; display:block">
@@ -586,7 +617,7 @@ a{color:inherit;text-decoration:none}
 
 <!-- ============ FOOTER ============ -->
 <footer style="background:#071C42; padding:56px 0">
-<div class="sr-wrap" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px">
+<div class="sr-wrap sr-foot" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px">
 <a href="./" aria-label="SmartRoads" class="sr-logo" style="font-family:'Inter',sans-serif; font-weight:700; font-size:30px; letter-spacing:-0.02em; line-height:1; min-height:44px; display:inline-flex; align-items:center"><span style="color:#FFFFFF">Smart</span><span style="color:var(--y)">Roads</span></a>
 <nav class="sr-footnav" style="display:flex; flex-wrap:wrap; gap:12px 28px; font-size:15px; color:#CBD5E8">
 <a href="#how">{{t.nav.how}}</a>
@@ -596,6 +627,10 @@ a{color:inherit;text-decoration:none}
 <a href="#research">{{t.nav.research}}</a>
 <a href="mailto:hello@smartroads.ai">{{t.foot.contact}}</a>
 </nav>
+<div style="display:flex; align-items:center; gap:10px">
+<a href="https://www.linkedin.com/company/smartroadsai" target="_blank" rel="noopener" aria-label="SmartRoads on LinkedIn" title="LinkedIn" style="width:44px; height:44px; display:inline-flex; align-items:center; justify-content:center; color:#CBD5E8; border:1px solid #26427A; border-radius:8px"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"></rect><circle cx="8" cy="8.3" r="1.3" fill="currentColor"></circle><path d="M7 11h2v6H7zM11 11h1.9v.9c.4-.7 1.2-1.1 2.2-1.1 1.9 0 2.9 1.2 2.9 3.2V17h-2v-2.6c0-1-.4-1.6-1.3-1.6-.9 0-1.5.6-1.5 1.7V17H11z" fill="currentColor"></path></svg></a>
+<a href="https://www.youtube.com/@smartroadsai" target="_blank" rel="noopener" aria-label="SmartRoads on YouTube" title="YouTube" style="width:44px; height:44px; display:inline-flex; align-items:center; justify-content:center; color:#CBD5E8; border:1px solid #26427A; border-radius:8px"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"></rect><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"></path></svg></a>
+</div>
 <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.08em; color:#A9B8D3">© 2026 SmartRoads</div>
 </div>
 </footer>
