@@ -49,7 +49,7 @@ a{color:inherit;text-decoration:none}
 @media (max-width: 900px){.sr-livepanel{display:none}}
 @media (max-width: 820px){
 .sr-wrap{padding-left:20px !important;padding-right:20px !important}
-.sr-sec{padding-top:56px !important;padding-bottom:56px !important}
+.sr-sec{padding-top:44px !important;padding-bottom:44px !important}
 .sr-navlinks,.sr-navcta{display:none !important}
 .sr-hero{min-height:690px !important}
 .sr-herotext{padding-top:24px !important}
@@ -99,7 +99,7 @@ a{color:inherit;text-decoration:none}
 <div style="--y: {{accent}}; background:#071C42; color:#F4F2EA; font-family:'Barlow',sans-serif; width:100%; overflow-x:hidden">
 
 <!-- ============ HERO (background layer = road footage; replace the animated SVG with a real video when available) ============ -->
-<section class="sr-hero" style="position:relative; min-height:920px; overflow:hidden; background:#071C42">
+<section class="sr-hero" style="position:relative; min-height:780px; overflow:hidden; background:#071C42">
 <div class="sr-heroscene" style="position:absolute; top:0; left:0; right:0; bottom:0">
 <svg class="sr-herosvg" viewBox="0 0 1440 860" preserveAspectRatio="xMidYMid slice" style="position:absolute; top:0; left:0; width:100%; height:100%" aria-hidden="true">
 <defs>
@@ -209,7 +209,7 @@ a{color:inherit;text-decoration:none}
 <a href="#press">{{t.nav.press}}</a>
 <a href="#research">{{t.nav.research}}</a>
 </span>
-<a class="sr-navcta" href="#demo" style="background:var(--y); color:#071C42; padding:0 22px; min-height:44px; display:inline-flex; align-items:center; border-radius:2px; font-weight:600">{{t.nav.demo}}</a>
+<a class="sr-navcta" href="mailto:hello@smartroads.ai?subject=Demo%20request" style="background:var(--y); color:#071C42; padding:0 22px; min-height:44px; display:inline-flex; align-items:center; border-radius:2px; font-weight:600">{{t.nav.demo}}</a>
 <span style="display:flex; align-items:center; gap:4px">
 <button type="button" onClick="{{setPT}}" aria-pressed="{{isPT}}" aria-label="{{t.nav.ptLabel}}" title="{{t.nav.ptLabel}}" style="width:44px; height:44px; padding:0; display:inline-flex; align-items:center; justify-content:center; background:transparent; border:2px solid {{ptBorder}}; border-radius:6px; opacity:{{ptOp}}; order:2; cursor:pointer">
 <svg viewBox="0 0 30 20" width="30" height="20" aria-hidden="true">
@@ -238,7 +238,7 @@ a{color:inherit;text-decoration:none}
 <h1 class="sr-h1" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; letter-spacing:-0.01em; line-height:0.9; margin:0; font-size:clamp(60px, 9vw, 132px); max-width:760px">{{t.hero.h1a}}<br><span style="color:var(--y)">{{t.hero.h1b}}</span></h1>
 <p class="sr-lead" style="max-width:560px; margin:32px 0 0 0; font-size:21px; line-height:1.5; color:#DCE3F0">{{t.hero.sub}}</p>
 <div class="sr-ctas" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:40px">
-<a href="#demo" style="background:var(--y); color:#071C42; padding:0 32px; min-height:56px; display:inline-flex; align-items:center; font-size:17px; font-weight:600; border-radius:2px">{{t.hero.ctaDemo}}</a>
+<a href="mailto:hello@smartroads.ai?subject=Demo%20request" style="background:var(--y); color:#071C42; padding:0 32px; min-height:56px; display:inline-flex; align-items:center; font-size:17px; font-weight:600; border-radius:2px">{{t.hero.ctaDemo}}</a>
 <a href="#how" style="border:1.5px solid #F4F2EA; color:#F4F2EA; padding:0 32px; min-height:56px; display:inline-flex; align-items:center; font-size:17px; font-weight:600; border-radius:2px">{{t.hero.ctaHow}}</a>
 </div>
 </div>
@@ -263,16 +263,16 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <!-- ============ HOW IT WORKS: 3 STEPS SIDE BY SIDE ============ -->
-<section id="how" class="sr-sec" style="padding:120px 0 120px 0">
+<section id="how" class="sr-sec" style="padding:64px 0 80px 0">
 <div class="sr-wrap">
 <div style="display:flex; align-items:center; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--y)">
 <span style="width:10px; height:10px; background:var(--y); display:inline-block; flex:0 0 10px"></span>
 <span>{{t.how.eyebrow}}</span>
 </div>
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:24px 0 0 0; font-size:clamp(46px, 6.4vw, 96px); max-width:1000px">{{t.how.h2}}</h2>
-<div class="sr-dashline" style="margin-top:56px; border-top:4px dashed var(--y)"></div>
+<div class="sr-dashline" style="margin-top:36px; border-top:4px dashed var(--y)"></div>
 
-<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:56px 40px; margin-top:48px">
+<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:48px 40px; margin-top:32px">
 
 <!-- Step 1 -->
 <div class="sr-step" style="flex:1 1 300px; min-width:0">
@@ -373,7 +373,7 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <!-- ============ DIFFERENTIALS ============ -->
-<section class="sr-sec" style="background:var(--y); color:#071C42; padding:110px 0">
+<section class="sr-sec" style="background:var(--y); color:#071C42; padding:72px 0">
 <div class="sr-wrap">
 <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500">{{t.diff.eyebrow}}</div>
 <div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:48px 40px; margin-top:32px">
@@ -390,12 +390,12 @@ a{color:inherit;text-decoration:none}
 <div style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; font-size:clamp(40px, 4.4vw, 64px); line-height:0.95; margin-top:8px">{{t.diff.c}}</div>
 </div>
 </div>
-<p style="margin:56px 0 0 0; font-size:clamp(22px, 2.6vw, 34px); line-height:1.3; font-weight:600; max-width:860px">{{t.diff.note}}</p>
+<p style="margin:40px 0 0 0; font-size:clamp(22px, 2.6vw, 34px); line-height:1.3; font-weight:600; max-width:860px">{{t.diff.note}}</p>
 </div>
 </section>
 
 <!-- ============ WHY SMARTROADS ============ -->
-<section id="why" class="sr-sec" style="padding:140px 0 120px 0">
+<section id="why" class="sr-sec" style="padding:80px 0 80px 0">
 <div class="sr-wrap">
 <div style="display:flex; align-items:center; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--y)">
 <span style="width:10px; height:10px; background:var(--y); display:inline-block; flex:0 0 10px"></span>
@@ -403,7 +403,7 @@ a{color:inherit;text-decoration:none}
 </div>
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:24px 0 0 0; font-size:clamp(46px, 6.4vw, 96px); max-width:1000px">{{t.why.h2}}</h2>
 
-<div class="sr-grid" style="margin-top:64px; display:flex; flex-wrap:wrap; gap:56px 40px">
+<div class="sr-grid" style="margin-top:40px; display:flex; flex-wrap:wrap; gap:48px 40px">
 <div class="sr-why" style="flex:1 1 300px; min-width:0; border-top:4px solid var(--y); padding-top:32px">
 <svg viewBox="0 0 64 64" width="72" height="72" style="display:block" aria-hidden="true">
 <circle cx="32" cy="32" r="26" fill="none" style="stroke:var(--y)" stroke-width="3.5"></circle>
@@ -439,7 +439,7 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <!-- ============ TEAM ============ -->
-<section id="team" class="sr-sec" style="background:#0A2250; padding:120px 0">
+<section id="team" class="sr-sec" style="background:#0A2250; padding:80px 0">
 <div class="sr-wrap">
 <div style="display:flex; align-items:center; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--y)">
 <span style="width:10px; height:10px; background:var(--y); display:inline-block; flex:0 0 10px"></span>
@@ -449,11 +449,11 @@ a{color:inherit;text-decoration:none}
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:0; font-size:clamp(38px, 4.6vw, 68px); flex:1 1 620px; text-wrap:balance">{{t.team.h2}}</h2>
 <p style="flex:1 1 320px; margin:0; max-width:420px; font-size:19px; line-height:1.55; color:#CBD5E8">{{t.team.p}}</p>
 </div>
-<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:48px 32px; margin-top:64px">
+<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:40px 32px; margin-top:40px">
 
 <div class="sr-card" style="flex:1 1 260px; min-width:0">
 <div class="sr-photo" style="width:min(240px, 100%); aspect-ratio:1 / 1; background:#0D2656; overflow:hidden">
-<img src="./assets/ab3c6d86b74e5122cea508f19607b443.jpg" alt="Thaís Araujo" style="width:100%; height:100%; object-fit:cover; display:block">
+<img src="./assets/bb97846951865bafb9403a9b250556d3.jpg" alt="Thaís Araujo" style="width:100%; height:100%; object-fit:cover; display:block">
 </div>
 <div class="sr-name" style="margin-top:20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; font-size:34px; line-height:1">Thaís Araujo</div>
 <div style="margin-top:8px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--y)">{{t.team.thaisRole}}</div>
@@ -482,13 +482,13 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <!-- ============ PRESS RELEASE ============ -->
-<section id="press" class="sr-sec" style="background:#F4F2EA; color:#071C42; padding:120px 0">
+<section id="press" class="sr-sec" style="background:#F4F2EA; color:#071C42; padding:80px 0">
 <div class="sr-wrap">
 <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px">
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:0; font-size:clamp(52px, 7vw, 108px)">{{t.press.h2}}</h2>
 <a href="press" style="font-size:17px; font-weight:600; border-bottom:2px solid #071C42; padding-bottom:3px">{{t.press.all}}</a>
 </div>
-<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:64px; margin-top:56px; border-top:2px solid #071C42; padding-top:40px">
+<div class="sr-grid" style="display:flex; flex-wrap:wrap; gap:56px; margin-top:36px; border-top:2px solid #071C42; padding-top:32px">
 <article style="flex:2 1 520px; min-width:0">
 <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:0.08em; color:#4A5878">{{t.press.date}}</div>
 <h3 style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.95; letter-spacing:-0.01em; margin:20px 0 0 0; font-size:clamp(32px, 4.4vw, 64px)">{{t.press.title}}</h3>
@@ -533,14 +533,14 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <!-- ============ RESEARCH ============ -->
-<section id="research" class="sr-sec" style="padding:120px 0">
+<section id="research" class="sr-sec" style="padding:80px 0">
 <div class="sr-wrap">
 <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px">
 <h2 class="sr-h2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.92; letter-spacing:-0.01em; margin:0; font-size:clamp(52px, 7vw, 108px)">{{t.res.h2}}</h2>
 <a href="research" style="font-size:17px; font-weight:600; color:#F4F2EA; border-bottom:2px solid #F4F2EA; padding-bottom:3px">{{t.res.all}}</a>
 </div>
 <p style="margin:24px 0 0 0; max-width:620px; font-size:19px; line-height:1.55; color:#CBD5E8">{{t.res.p}}</p>
-<div style="margin-top:48px; border-top:2px solid #F4F2EA">
+<div style="margin-top:36px; border-top:2px solid #F4F2EA">
 <div style="display:flex; flex-wrap:wrap; gap:16px 48px; padding:32px 0; border-bottom:1px solid #26427A">
 <div style="flex:0 0 240px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.08em; line-height:1.6; color:var(--y)">The IEEE International Smart Cities Conference (ISC2)</div>
 <div style="flex:1 1 380px; min-width:0">
@@ -567,7 +567,7 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <!-- ============ FINAL CTA ============ -->
-<section id="demo" class="sr-sec" style="background:var(--y); color:#071C42; padding:120px 0">
+<section id="demo" class="sr-sec" style="background:var(--y); color:#071C42; padding:80px 0">
 <div class="sr-wrap">
 <h2 class="sr-ctah2" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; line-height:0.88; letter-spacing:-0.01em; margin:0; font-size:clamp(56px, 9vw, 140px); max-width:1100px">{{t.cta.h2}}</h2>
 <div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:48px">
@@ -578,7 +578,7 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <!-- ============ RECOGNISED BY ============ -->
-<section class="sr-sec" style="padding:96px 0 88px 0; border-bottom:1px solid #1C3566">
+<section class="sr-sec" style="padding:64px 0 56px 0; border-bottom:1px solid #1C3566">
 <div class="sr-wrap">
 <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#A9B8D3">{{t.seal.heading}}</div>
 
@@ -664,7 +664,7 @@ s2: { title: 'Collect data while you drive', text: 'On normal routes the phone r
 s3: { title: 'See it on your dashboard', text: 'AI rates every segment and ranks priorities on one live map, with reports that plug into your existing systems.', network: 'NETWORK', map: 'MAP', reports: 'REPORTS', seg: 'SEGMENT 112', score: '/100 · VERY POOR', trend: 'CONDITION TREND', order: 'Create work order' },
 diff: { eyebrow: 'What makes it different', no: 'No', a: 'Special vehicles', b: 'Training', c: 'Specific hardware', note: 'Meaning deployment is immediate and affordable. Any smartphone, any vehicle in your fleet, from day one.' },
 why: { eyebrow: 'Why SmartRoads', h2: 'Fix roads earlier. Spend less. Keep people safer.', a: 'Save costs in maintenance interventions', at: 'Catch problems while they are still cheap to fix, and send crews where the data says they are needed.', b: 'Reduce CO₂ emissions', bt: 'Light, early repairs use far less material and machinery than major rehabilitation after a road has failed.', c: 'Reduce the risk of accidents', ct: 'Safer roads, because potholes, cracks and rutting are found and fixed before they cause harm.' },
-team: { eyebrow: 'The team', h2: 'The people turning every phone into a road sensor.', p: "Researchers and engineers building the data layer for the world's roads.", thaisRole: 'Co-founder & CEO', thaisBio: 'MSc in Digital Transformation and 15+ years leading teams that built and rolled out digital products at scale in large corporates such as Claro and Vivo (Telefónica Brazil). Runs product and commercial strategy for SmartRoads.', pedroRole: 'Co-founder & CTO', pedroBio: 'PhD research on machine learning for road-transport infrastructure at Instituto Superior Técnico, where the idea for SmartRoads began.', advRole: 'Scientific Advisor', advBio: 'Professor at the University of Coimbra — Director of its Road Pavements Laboratory and Deputy Director of CITTA, the FCT-rated “Excellent” transport research centre.' },
+team: { eyebrow: 'The team', h2: 'The people turning every phone into a road sensor.', p: "Researchers and engineers building the data layer for the world's roads.", thaisRole: 'Co-founder & CEO', thaisBio: 'MSc in Digital Transformation and 15+ years leading teams that built and rolled out digital products at scale in large corporates. Runs product and commercial strategy for SmartRoads.', pedroRole: 'Co-founder & CTO', pedroBio: 'PhD research on machine learning for road-transport infrastructure at Instituto Superior Técnico, where the idea for SmartRoads began.', advRole: 'Scientific Advisor', advBio: 'Professor at the University of Coimbra — Director of its Road Pavements Laboratory and Deputy Director of CITTA, the FCT-rated “Excellent” transport research centre.' },
 press: { dl: 'Download press release (PDF)', pdf: 'DOWNLOAD PDF ↓', h2: 'Press.', all: 'All press releases →', date: 'LISBON, PORTUGAL · OCTOBER 22, 2026', title: 'SmartRoads was selected as spark phase winner of the AI Challenge Competition from AI-BOOST', sub: 'The team will focus on Challenge 4: Generative AI for Automatic Test Case Generation from Crash Databases & Standards, in collaboration with industry challenge owner Siemens Industry Software NV.', p1: 'SmartRoads has today announced its selection as a spark phase winner in the European Union’s AI-BOOST AI Challenge Competition. Out of applications submitted across Europe, SmartRoads was chosen by an independent panel of experts to use its AI solution for solving Challenge 4: Generative AI for Automatic Test Case Generation from Crash Databases & Standards.', p2: 'During the upcoming months the team will work on its AI solution, moving from TRL 1-2 to TRL 4-5 while addressing a real-world challenge in the generative AI field.', quote: '“Being selected for AI-BOOST is an exciting opportunity to apply our AI expertise to real-world road safety challenges. We look forward to collaborating with Siemens to turn crash data into actionable insights for safer mobility.”', qby: 'PEDRO MARCELINO · CTO, SMARTROADS', aboutH: 'About the AI-BOOST AI Challenge Competition', about1: 'Funded under the European Union’s Horizon Europe research and innovation programme (Grant Agreement No. 101135737), AI-BOOST is a major European initiative designed to propel trustworthy, cutting-edge Generative AI development.', about2: 'The competition targets four strategic industrial sectors starting at Technology Readiness Level (TRL) 2–3, guiding high-potential teams to demonstrate validated Proofs of Concept at TRL 4–5, in two stages:', ph1: 'SPARK PHASE', ph1t: 'Five selected winning teams per challenge secure a place in the next stage, gaining technical guidance and access to European supercomputing infrastructure (such as CINECA’s LEONARDO supercomputer) to build their initial prototype.', ph2: 'ADVANCE PHASE', ph2t: 'Winners proceed through a multi-month development and validation programme, culminating in a live demonstration event in Brussels in February 2027, where final winners will be selected.', more: 'Visit aiboost-project.eu →', disc: 'Disclaimer: Funded by the European Union under GA No 101135737. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.', prev: 'Previous press releases', r1d: 'JULY 2026 · ISSUE #183', r1t: 'SmartRoads awarded “Use Case of the Month” by the BABLE Smart Cities Newsletter', r1b: 'In Loulé, Portugal, everyday vehicle data is shifting road management from reactive to proactive, cutting costs and delays. Early detection replaces costly late repairs, builds a consistent record of road condition over time and gives road managers a model ready to scale across networks of any size.', r2d: '11–12 JUNE 2026', r2t: 'SmartRoads presents at CITTA2026', r2b: 'At the 17th International Conference on Territory, Transports and Environment, hosted by the University of Coimbra (FCTUC), SmartRoads presented how the smartphones already mounted in municipal fleet vehicles become an automatic road-condition monitoring network: no new hardware, no dedicated surveys.', r3d: 'WOMAN SUMMIT 2026', r3t: 'SmartRoads takes 2nd place at Woman Summit', r3b: 'During Women’s Weekend, co-founder Thaís Araújo presented SmartRoadsAI on the Woman Summit stage and shared the vision the team is building for the future of cities. SmartRoads placed 2nd in the Pitch Competition.', r4d: 'LIVE INTERVIEW', r4t: 'SmartRoads goes live on Conta Lá', r4b: 'Thaís Araújo gave a live interview to Júlio Magalhães on Conta Lá, presenting SmartRoadsAI and how artificial intelligence can make roads safer.', r5d: 'DEC 5, 2025', r5t: 'SmartRoads wins EIT Jumpstarter 2025', r5b: 'First place in the Urban Mobility & Smart Cities category, out of 908 applications from 22 countries and 42 finalists in the Budapest grand final. The prize includes €10,000, specialised mentoring and access to an international network of partners and cities.' },
 res: { h2: 'Research.', all: 'All publications →', p: 'Publications by our CTO, Pedro Marcelino, on pavement condition assessment and road data.', d1: 'Evaluates multimodal language models for rating pavement condition without task-specific training, comparing model upgrades with agent-based approaches.', d2: 'How to build prediction models for road networks with little historical data, by reusing knowledge from other datasets.', d3: 'Compares machine-learning algorithms to predict how pavement condition evolves and to support predictive maintenance.', d4: 'Compares MICE, KNN, MissForest and mean imputation to fill in missing data. MissForest performs particularly well.', d5: 'Uses LASSO regularised regression to build pavement condition indicators with less data collection. Includes a case study on a Portuguese motorway.', d6: 'Uses Scikit-learn and the LTPP database to predict the skid resistance of asphalt pavements.' },
 cta: { h2: 'Your fleet already drives your roads. Let it read them.', demo: 'Request a demo', talk: 'Talk to the team' },
@@ -680,7 +680,7 @@ s2: { title: 'Recolha dados enquanto conduz', text: 'Nos percursos habituais, o 
 s3: { title: 'Veja tudo no dashboard', text: 'A IA classifica cada troço e ordena as prioridades num mapa em tempo real, com relatórios que se integram nos sistemas que já usa.', network: 'REDE', map: 'MAPA', reports: 'RELATÓRIOS', seg: 'TROÇO 112', score: '/100 · MUITO MAU', trend: 'EVOLUÇÃO DO ESTADO', order: 'Criar ordem de trabalho' },
 diff: { eyebrow: 'O que nos distingue', no: 'Sem', a: 'Veículos especiais', b: 'Formação', c: 'Hardware específico', note: 'Ou seja, a implementação é imediata e acessível. Qualquer smartphone, qualquer veículo da sua frota, desde o primeiro dia.' },
 why: { eyebrow: 'Porquê a SmartRoads', h2: 'Repare mais cedo. Gaste menos. Proteja mais pessoas.', a: 'Poupe nos custos de manutenção', at: 'Detete os problemas enquanto ainda são baratos de reparar e envie as equipas para onde os dados mostram que são precisas.', b: 'Reduza as emissões de CO₂', bt: 'Reparações leves e atempadas usam muito menos material e maquinaria do que uma reabilitação profunda depois de a estrada falhar.', c: 'Reduza o risco de acidentes', ct: 'Estradas mais seguras, porque buracos, fendas e rodeiras são detetados e reparados antes de causarem danos.' },
-team: { eyebrow: 'A equipa', h2: 'As pessoas que transformam cada telemóvel num sensor de estradas.', p: 'Investigadores e engenheiros a construir a camada de dados das estradas do mundo.', thaisRole: 'Cofundadora e CEO', thaisBio: 'Mestrado em Transformação Digital e mais de 15 anos a liderar equipas que construíram e lançaram produtos digitais à escala em grandes empresas como a Claro e a Vivo (Telefónica Brasil). Lidera a estratégia de produto e comercial da SmartRoads.', pedroRole: 'Cofundador e CTO', pedroBio: 'Investigação de doutoramento em machine learning para infraestruturas de transporte rodoviário no Instituto Superior Técnico, onde nasceu a ideia da SmartRoads.', advRole: 'Consultor Científico', advBio: 'Professor da Universidade de Coimbra — Diretor do Laboratório de Pavimentos Rodoviários e Subdiretor do CITTA, o centro de investigação em transportes classificado como “Excelente” pela FCT.' },
+team: { eyebrow: 'A equipa', h2: 'As pessoas que transformam cada telemóvel num sensor de estradas.', p: 'Investigadores e engenheiros a construir a camada de dados das estradas do mundo.', thaisRole: 'Cofundadora e CEO', thaisBio: 'Mestrado em Transformação Digital e mais de 15 anos a liderar equipas que construíram e lançaram produtos digitais à escala em grandes empresas. Lidera a estratégia de produto e comercial da SmartRoads.', pedroRole: 'Cofundador e CTO', pedroBio: 'Investigação de doutoramento em machine learning para infraestruturas de transporte rodoviário no Instituto Superior Técnico, onde nasceu a ideia da SmartRoads.', advRole: 'Consultor Científico', advBio: 'Professor da Universidade de Coimbra — Diretor do Laboratório de Pavimentos Rodoviários e Subdiretor do CITTA, o centro de investigação em transportes classificado como “Excelente” pela FCT.' },
 press: { dl: 'Descarregar comunicado (PDF)', pdf: 'DESCARREGAR PDF ↓', h2: 'Imprensa.', all: 'Todos os comunicados →', date: 'LISBOA, PORTUGAL · 22 DE OUTUBRO DE 2026', title: 'SmartRoads foi selecionada como vencedora da fase Spark do AI Challenge Competition do AI-BOOST', sub: 'A equipa vai focar-se no Desafio 4: IA Generativa para Geração Automática de Casos de Teste a partir de Bases de Dados de Acidentes e Normas, em colaboração com o proponente do desafio, a Siemens Industry Software NV.', p1: 'A SmartRoads anunciou hoje a sua seleção como vencedora da fase Spark do AI Challenge Competition do AI-BOOST, da União Europeia. De entre as candidaturas submetidas em toda a Europa, a SmartRoads foi escolhida por um painel independente de especialistas para aplicar a sua solução de IA na resolução do Desafio 4: IA Generativa para Geração Automática de Casos de Teste a partir de Bases de Dados de Acidentes e Normas.', p2: 'Nos próximos meses, a equipa irá trabalhar na sua solução de IA para a fazer evoluir de TRL 1-2 para TRL 4-5, ao mesmo tempo que responde a um desafio real na área da IA generativa.', quote: '“Ser selecionados para o AI-BOOST é uma oportunidade entusiasmante para aplicar a nossa experiência em IA a desafios reais de segurança rodoviária. Estamos ansiosos por colaborar com a Siemens para transformar dados de acidentes em conhecimento útil para uma mobilidade mais segura.”', qby: 'PEDRO MARCELINO · CTO, SMARTROADS', aboutH: 'Sobre o AI-BOOST AI Challenge Competition', about1: 'Financiado pelo programa Horizonte Europa de investigação e inovação da União Europeia (Acordo de Subvenção n.º 101135737), o AI-BOOST é uma iniciativa europeia de grande dimensão destinada a impulsionar o desenvolvimento de IA Generativa fiável e de ponta.', about2: 'A competição abrange quatro setores industriais estratégicos, partindo do Nível de Maturidade Tecnológica (TRL) 2–3, e orienta equipas de elevado potencial a demonstrar Provas de Conceito validadas em TRL 4–5, em duas fases:', ph1: 'FASE SPARK', ph1t: 'Cinco equipas vencedoras por desafio garantem lugar na fase seguinte, com acompanhamento técnico e acesso a infraestruturas europeias de supercomputação (como o supercomputador LEONARDO do CINECA) para construir o seu protótipo inicial.', ph2: 'FASE ADVANCE', ph2t: 'As equipas vencedoras seguem para um programa de desenvolvimento e validação de vários meses, que culmina num evento de demonstração ao vivo em Bruxelas, em fevereiro de 2027, onde serão selecionados os vencedores finais.', more: 'Visitar aiboost-project.eu →', disc: 'Aviso legal: Financiado pela União Europeia ao abrigo do Acordo de Subvenção n.º 101135737. As opiniões expressas são, contudo, as do(s) autor(es) e não refletem necessariamente as da União Europeia. Nem a União Europeia nem a entidade financiadora podem ser responsabilizadas por elas.', prev: 'Comunicados anteriores', r1d: 'JULHO DE 2026 · N.º 183', r1t: 'SmartRoads distinguida como “Use Case of the Month” pela BABLE Smart Cities Newsletter', r1b: 'Em Loulé, Portugal, os dados de veículos do dia a dia estão a levar a gestão de estradas de reativa para proativa, reduzindo custos e atrasos. A deteção precoce substitui reparações tardias e dispendiosas, cria um histórico consistente do estado da estrada e oferece um modelo pronto a escalar para redes de qualquer dimensão.', r2d: '11–12 DE JUNHO DE 2026', r2t: 'SmartRoads apresenta-se no CITTA2026', r2b: 'Na 17.ª Conferência Internacional sobre Território, Transportes e Ambiente, organizada pela Universidade de Coimbra (FCTUC), a SmartRoads mostrou como os smartphones já instalados nos veículos das frotas municipais se tornam uma rede automática de monitorização do estado das estradas: sem hardware novo e sem inspeções dedicadas.', r3d: 'WOMAN SUMMIT 2026', r3t: 'SmartRoads conquista 2.º lugar no Woman Summit', r3b: 'No fim de semana da Mulher, a cofundadora Thaís Araújo subiu ao palco do Woman Summit para apresentar a SmartRoadsAI e partilhar a visão que a equipa está a construir para o futuro das cidades. A SmartRoads ficou em 2.º lugar na Pitch Competition.', r4d: 'ENTREVISTA EM DIRETO', r4t: 'SmartRoads em direto no Conta Lá', r4b: 'Thaís Araújo deu uma entrevista em direto a Júlio Magalhães no Conta Lá, onde apresentou a SmartRoadsAI e o modo como a inteligência artificial pode tornar as estradas mais seguras.', r5d: '5 DE DEZEMBRO DE 2025', r5t: 'SmartRoads vence EIT Jumpstarter 2025', r5b: '1.º lugar na categoria Urban Mobility & Smart Cities, de entre 908 candidaturas de 22 países e 42 finalistas na grande final em Budapeste. O prémio inclui 10.000 euros, mentoria especializada e acesso a uma rede internacional de parceiros e cidades.' },
 res: { h2: 'Investigação.', all: 'Todas as publicações →', p: 'Publicações do nosso CTO, Pedro Marcelino, sobre avaliação do estado de pavimentos e dados rodoviários.', d1: 'Avalia modelos de linguagem multimodais na classificação do estado do pavimento sem treino específico, comparando evolução de modelos com abordagens baseadas em agentes.', d2: 'Investiga como criar modelos de previsão em redes rodoviárias com poucos dados históricos, reutilizando conhecimento de outros conjuntos de dados.', d3: 'Compara algoritmos de machine learning para prever a evolução do estado dos pavimentos e apoiar a manutenção preditiva.', d4: 'Compara MICE, KNN, MissForest e imputação pela média para preencher dados em falta. O MissForest apresenta resultados particularmente favoráveis.', d5: 'Usa regressão regularizada LASSO para construir indicadores de condição do pavimento, reduzindo as necessidades de recolha de dados. Inclui um caso de estudo numa autoestrada portuguesa.', d6: 'Utiliza Scikit-learn e dados da base LTPP para prever a aderência de pavimentos betuminosos.' },
 cta: { h2: 'A sua frota já percorre as estradas. Agora também as avalia.', demo: 'Pedir demonstração', talk: 'Falar com a equipa' },
